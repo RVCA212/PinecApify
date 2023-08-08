@@ -59,7 +59,7 @@ async def main():
             print("Documents loaded")
 
             print("Splitting documents")
-            text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+            text_splitter = CharacterTextSplitter(chunk_size=200, chunk_overlap=20)
             docs = text_splitter.split_documents(documents)
             print("Documents split")
 
